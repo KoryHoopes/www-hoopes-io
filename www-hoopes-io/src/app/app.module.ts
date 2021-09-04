@@ -17,25 +17,19 @@ import { MaterialModule } from './modules/material.module';
 
 @NgModule({
   declarations: [
-    // Components
     AppComponent,
     FooterComponent,
     HeaderComponent
   ],
   imports: [
-    // Angular
     BrowserModule,
     BrowserAnimationsModule,
-    // Angular Routing
     RoutingModule,
-    // Flex Layout
     FlexLayoutModule,
-    // Font Awesome
     FontAwesomeModule,
-    // Material
     MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
