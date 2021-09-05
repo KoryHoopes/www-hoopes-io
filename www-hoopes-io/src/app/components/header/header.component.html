@@ -11,7 +11,7 @@
       <!-- Show the social media links when the site is wide -->
       <div fxHide.xs="true">
         <button mat-icon-button>
-          <fa-icon class="fa-lg" [icon]="site.email" (click)="openEmail()"></fa-icon>
+          <fa-icon class="fa-lg" [icon]="site.email" (click)="openEmailDialog()"></fa-icon>
         </button>
         <button mat-icon-button *ngFor="let account of socialMedia">
           <a [href]="account.url">
@@ -38,7 +38,7 @@
   <nav class="mobile-menu" fxLayout="column" fxHide fxShow.xs="true" *ngIf="site.mobileMenu.show" [@toggleMobileMenu]>
     <div class="social" fxLayout="row" fxLayoutAlign="space-between center">
       <button mat-icon-button>
-        <fa-icon class="fa-lg" [icon]="site.email" (click)="openEmail()"></fa-icon>
+        <fa-icon class="fa-lg" [icon]="site.email" (click)="openEmailDialog()"></fa-icon>
       </button>
       <ng-container *ngFor="let account of socialMedia">
         <a [href]="account.url">

@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 // Components
 import { FooterComponent } from '../components/footer/footer.component';
 import { HeaderComponent } from '../components/header/header.component';
+import { EmailDialogComponent } from '../components/header/email-dialog/email-dialog.component';
 // Flex Layout
 import { FlexLayoutModule } from '@angular/flex-layout';
 // Font Awesome
@@ -14,7 +15,8 @@ import { MaterialModule } from '../modules/material.module';
 @NgModule({
   declarations: [
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    EmailDialogComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +26,8 @@ import { MaterialModule } from '../modules/material.module';
   ],
   exports: [
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    EmailDialogComponent
   ]
 })
 export class ComponentsModule { }

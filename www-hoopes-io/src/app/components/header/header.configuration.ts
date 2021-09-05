@@ -65,7 +65,7 @@ const socialMedia: HeaderInterfaces.SocialMedia[] = [
     },
     {
         name: 'Replit.com',
-        icon: faBars,
+        icon: faCode,
         url: 'https://replit.com/@KoryHoopes'
     }
 ];

@@ -4,6 +4,8 @@ import { Component } from '@angular/core';
 import { animations, icons, site, socialMedia } from './header.configuration';
 // Material 
 import { MatDialog } from '@angular/material/dialog';
+// Components
+import { EmailDialogComponent } from './email-dialog/email-dialog.component';
 
 // Header Component
 @Component({
@@ -13,7 +15,7 @@ import { MatDialog } from '@angular/material/dialog';
   animations: animations,
 })
 export class HeaderComponent {
-  constructor(public dialog: MatDialog) { }
+  constructor(private dialogRef: MatDialog) { }
 
   // Template variables
   site = site;
@@ -33,7 +35,11 @@ export class HeaderComponent {
   }
 
   // Email Dialog
-  openEmail() {
-    console.log('Open email dialog.');
+  openEmailDialog() {
+    this.dialogRef.open(EmailDialogComponent, {
+      data: {
+        close: icons.times
+      }
+    });
   }
 }
