@@ -1,14 +1,11 @@
 // Angular
 import { Component } from '@angular/core';
-// Animations 
-import { animations } from './header.animations';
-// Data
-import { icons, site, socialMedia } from './header.data';
-// Interfaces
-import { Site, SocialMedia } from './header.interfaces';
+// Component configuration
+import { animations, icons, site, socialMedia } from './header.configuration';
 // Material 
 import { MatDialog } from '@angular/material/dialog';
 
+// Header Component
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -18,8 +15,8 @@ import { MatDialog } from '@angular/material/dialog';
 export class HeaderComponent {
   constructor(public dialog: MatDialog) { }
 
-  site: Site = site;
-  socialMedia: SocialMedia[] = socialMedia;
+  site = site;
+  socialMedia = socialMedia;
 
   // Component functions
   mobileMenu(): void {
