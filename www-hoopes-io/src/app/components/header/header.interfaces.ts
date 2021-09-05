@@ -1,5 +1,7 @@
+// Font Awesome
 import { IconDefinition } from "@fortawesome/fontawesome-common-types";
 
+// Header Component Interfaces
 namespace HeaderInterfaces {
   export interface Site {
     title: string;

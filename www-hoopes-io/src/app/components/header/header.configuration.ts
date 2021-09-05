@@ -10,6 +10,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons/faTimes';
 // Interfaces
 import { HeaderInterfaces } from './header.interfaces';
 
+// Header Component Configuration
 const animations = [
     trigger('toggleMobileMenu', [
         transition(':enter', [
@@ -54,7 +55,7 @@ const site: HeaderInterfaces.Site = {
 const socialMedia: HeaderInterfaces.SocialMedia[] = [
     {
         name: 'Github',
-        icon: faBars,
+        icon: faGithub,
         url: 'https://www.github.com/koryhoopes'
     },
     {

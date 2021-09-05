@@ -1,6 +1,6 @@
 // Angular
 import { Component } from '@angular/core';
-// Component configuration
+// Component Configuration
 import { animations, icons, site, socialMedia } from './header.configuration';
 // Material 
 import { MatDialog } from '@angular/material/dialog';
@@ -15,10 +15,11 @@ import { MatDialog } from '@angular/material/dialog';
 export class HeaderComponent {
   constructor(public dialog: MatDialog) { }
 
+  // Template variables
   site = site;
   socialMedia = socialMedia;
 
-  // Component functions
+  // Mobile Menu
   mobileMenu(): void {
     site.mobileMenu.show = !site.mobileMenu.show;
 
@@ -31,7 +32,7 @@ export class HeaderComponent {
     site.mobileMenu.icon = icons.bars;
   }
 
-  // Email modal
+  // Email Dialog
   openEmail() {
     console.log('Open email dialog.');
   }
