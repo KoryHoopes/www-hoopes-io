@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 // Components
 import { AppComponent } from './app.component';
 import { ComponentsModule } from './modules/components.module';
+// Flex Layout
+import { FlexLayoutModule } from '@angular/flex-layout';
 // Routing
 import { RoutingModule } from './modules/routing.module';
 
@@ -16,6 +18,7 @@ import { RoutingModule } from './modules/routing.module';
     BrowserModule,
     BrowserAnimationsModule,
     ComponentsModule,
+    FlexLayoutModule,
     RoutingModule
   ],
   providers: [],
